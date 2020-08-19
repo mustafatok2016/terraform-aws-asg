@@ -1,4 +1,4 @@
-# terraform-aws-asg
+# terraform-iaac-2020
 
 1. Create file called module.tf
 2. Copy paste the following code 
