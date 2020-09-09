@@ -3,9 +3,15 @@
 1. Create file called module.tf
 2. Copy paste the following code 
 ```
-module "app1" {
-    source = "../class4"
-    region = "us-east-1"
+module "asg" {
+  source  = "mustafatok2016/asg/aws"
+  version = "1.0.0"
+  region           = "us-east-1"
+  key_name         = "asg-key-pair"                    #It will be created
+  image_owner      = "amazon"                    #
+  desired_capacity = 1
+  max_size         = 1
+  min_size         = 1
 }
 ```
 
